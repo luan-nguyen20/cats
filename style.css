@@ -30,20 +30,36 @@ body,html {
     width: 10rem;
     text-align: center;
     color: white;
-    background: rgba(0,0,0,0.4);
-    text-shadow: 0 0 .5rem black;
+    background: rgb(255, 1, 1);
   }
+/*
+.keys #Ayu {
+    background-image: url(images/cat1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}*/
 
-/*style for "kbd" (key names like A, S...)*/
-kbd {
+/*style for img*/
+img {
     display: block;
+    border: 0.08rem solid black;
+    height: 10rem;
+    width: 10rem;
     font-size: 4rem;
   }
 
-/*style for "sound" class*/
-.sound {
-    font-size: 1.2rem;
+/*style for "catNames" class*/
+.catNames {
+    font-size: 1.5rem;
     text-transform: uppercase;
+    text-align: center;
     letter-spacing: .1rem;
-    color: #ffc600;
+    color: #fdcc19;
+    font-weight: bold;
+    /*text outline*/
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
   }
