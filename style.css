@@ -14,6 +14,7 @@ body,html {
 .keys {
     display: flex;
     flex: 1;
+    flex-wrap: wrap;
     min-height: 100vh;
     align-items: center;
     justify-content: center;
@@ -74,4 +75,12 @@ img {
 		1px -1px 0 #000,
 		-1px 1px 0 #000,
 		1px 1px 0 #000;
+  }
+
+  /*style for footer*/
+  footer{
+      text-align: right;
+      font-size: 2rem;
+      font-weight: bold;
+      background: white;
   }
