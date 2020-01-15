@@ -33,6 +33,14 @@ body,html {
     background: rgb(255, 1, 1);
   }
 
+/*style for the 'playing' class, which will be added
+when key is press for a transition effect*/
+.playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+  }
+
 /*style for img*/
 img {
     display: block;
