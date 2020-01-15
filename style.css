@@ -26,7 +26,17 @@ body,html {
     margin: 1rem;
     font-size: 1.5rem;
     padding: 1rem .5rem;
-    transition: all .07s ease;
+    
+    /*
+    add transition effect for when any property
+    changes value ('all').
+    The effect duration is '.05s'.
+    'ease' specifies a transition effect 
+    with a slow start, then fast, 
+    then end slowly (this is default).
+    */
+    transition: all .05s ease;
+
     width: 10rem;
     text-align: center;
     color: white;
