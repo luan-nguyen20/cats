@@ -60,3 +60,36 @@ function removeTransition(e){
 //for 'transitionend' event, then call the
 //'removeTransition' func.
 keys.forEach(key => key.addEventListener('transitionend',removeTransition));
+
+function playSoundOnClick(e){
+    //console.log(e.target.id);
+    let audio, key;
+   
+    if(e.target.id === 'Ayu'){
+        audio = document.querySelector(`audio[data-key="65"]`);
+        key = document.querySelector(`div[data-key="65"]`);
+    }
+    else if(e.target.id === 'Sayoko'){
+        audio = document.querySelector(`audio[data-key="83"]`);
+        key = document.querySelector(`div[data-key="83"]`);
+    }
+    else if(e.target.id === 'Daisuke'){
+        audio = document.querySelector(`audio[data-key="68"]`);
+        key = document.querySelector(`div[data-key="68"]`);
+    }
+    else{
+        return;
+    }
+    key.classList.add('playing');
+    audio.currentTime = 0;
+    audio.play();
+}
+
+const ayuDiv = document.querySelector('#Ayu');
+ayuDiv.addEventListener('click',playSoundOnClick);
+
+const sayokoDiv = document.querySelector('#Sayoko');
+sayokoDiv.addEventListener('click',playSoundOnClick);
+
+const daisukeDiv = document.querySelector('#Daisuke');
+daisukeDiv.addEventListener('click',playSoundOnClick);
