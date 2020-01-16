@@ -85,14 +85,6 @@ function playSoundOnClick(e){
     audio.play();
 }
 
-const ayuDiv = document.querySelector('#Ayu');
-ayuDiv.addEventListener('click',playSoundOnClick);
-ayuDiv.addEventListener('touchstart',playSoundOnClick);
-
-const sayokoDiv = document.querySelector('#Sayoko');
-sayokoDiv.addEventListener('click',playSoundOnClick);
-sayokoDiv.addEventListener('touchstart',playSoundOnClick);
-
-const daisukeDiv = document.querySelector('#Daisuke');
-daisukeDiv.addEventListener('click',playSoundOnClick);
-daisukeDiv.addEventListener('touchstart',playSoundOnClick);
+//onclick event handlers for cat pics
+const catPics = Array.from(document.querySelectorAll('.catImg'));
+catPics.forEach(catImg => catImg.addEventListener('click',playSoundOnClick));
