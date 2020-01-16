@@ -91,6 +91,8 @@ ayuDiv.addEventListener('touchstart',playSoundOnClick);
 
 const sayokoDiv = document.querySelector('#Sayoko');
 sayokoDiv.addEventListener('click',playSoundOnClick);
+sayokoDiv.addEventListener('touchstart',playSoundOnClick);
 
 const daisukeDiv = document.querySelector('#Daisuke');
 daisukeDiv.addEventListener('click',playSoundOnClick);
+daisukeDiv.addEventListener('touchstart',playSoundOnClick);
