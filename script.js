@@ -87,6 +87,7 @@ function playSoundOnClick(e){
 
 const ayuDiv = document.querySelector('#Ayu');
 ayuDiv.addEventListener('click',playSoundOnClick);
+ayuDiv.addEventListener('touchstart',playSoundOnClick);
 
 const sayokoDiv = document.querySelector('#Sayoko');
 sayokoDiv.addEventListener('click',playSoundOnClick);
